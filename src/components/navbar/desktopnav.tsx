@@ -14,17 +14,28 @@ export default function DesktopNav() {
 
   return (
     <>
-      <nav className="hidden w-0 h-0 md:flex md:w-full md:h-16 md:bg-[#f0efeb] md:items-center">
-      <NavLink to="/">Desktop Navbar Top</NavLink>
-      </nav>
-      <nav
+      <section className="hidden w-0 h-0 md:flex md:w-full md:h-16 
+      md:bg-[#f0efeb] md:items-center">
+      <DesktopNavbarContent />
+      </section>
+      <section
         className={
           "hidden transition-all duration-200 ease-linear overflow-hidden w-0 h-0 md:min-w-[300px] md:w-[90vw] md:max-w-[875px] md:flex md:bg-[#f0efeb] md:items-center fixed top-0 left-1/2 transform -translate-x-1/2 " +
           (isScrollDown && " md:h-16 z-20")
         }
       >
-        <NavLink to="/">Desktop Navbar Fixed</NavLink>
-      </nav>
+        <DesktopNavbarContent />
+      </section>
     </>
+  );
+}
+
+function DesktopNavbarContent () {
+  return (
+    <nav className="p-3 flex items-center">
+      <NavLink to="/">
+        <img src="/navbarlogotransparent.png" alt="" className="h-10 opacity-35" />
+      </NavLink>
+    </nav>
   );
 }

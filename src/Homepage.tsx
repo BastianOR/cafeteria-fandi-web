@@ -26,8 +26,8 @@ function Hero() {
           <h3>Bienvenido/a</h3>
           <MdOutlineHorizontalRule />
         </div>
-        <h1 className="w-full text-center mt-2 sm:mt-3">Cafetería Fandi</h1>
-        <div className="flex gap-2 items-end">
+        <h1 className="w-full text-center mt-3">Cafetería Fandi</h1>
+        <div className="flex gap-2 items-end mt-2">
           <img
             src="/retrolineleft.png"
             alt=""
