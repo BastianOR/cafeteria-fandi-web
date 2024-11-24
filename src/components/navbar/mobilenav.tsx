@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
@@ -26,10 +25,18 @@ export default function MobileNav() {
           </button>
         </div>
 
-        <nav className={
-          "w-full bg-[#eeede6] overflow-hidden transition-all duration-200 ease-linear flex flex-col items-center justify-center " + 
-          (isOpen ? "h-[216px]" : "h-0")
-          }>
+        <nav
+          className={
+            "w-full bg-[#eeede6] overflow-hidden transition-all duration-200 ease-linear flex flex-col items-center justify-center " +
+            (isOpen ? "h-[288px]" : "h-0")
+          }
+        >
+          <NavLink
+            to="/"
+            className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+          >
+            Inicio
+          </NavLink>
           <NavLink
             to="/carta"
             className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
@@ -37,13 +44,13 @@ export default function MobileNav() {
             Carta
           </NavLink>
           <NavLink
-            to="/instagram"
+            to="/location"
             className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
           >
-            Mapa
+            Ubicación
           </NavLink>
           <NavLink
-            to="/carta"
+            to="/socials"
             className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
           >
             Instagram

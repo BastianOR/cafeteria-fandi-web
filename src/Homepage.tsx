@@ -21,13 +21,16 @@ function Hero() {
         className="h-52 w-full object-cover object-top"
       />
       <main className="flex flex-col items-center">
-        <div className="w-full flex justify-center items-center gap-2 mt-14">
+        
+        <h1 className="w-full text-center mt-12">Cafetería Fandi</h1>
+
+        <div className="w-full flex justify-center items-center gap-2">
           <MdOutlineHorizontalRule />
-          <h3>Bienvenido/a</h3>
+          <h3>Bienvenid@</h3>
           <MdOutlineHorizontalRule />
         </div>
-        <h1 className="w-full text-center mt-3">Cafetería Fandi</h1>
-        <div className="flex gap-2 items-end mt-2">
+
+        <div className="flex gap-2 items-end mt-7">
           <img
             src="/retrolineleft.png"
             alt=""
@@ -41,7 +44,7 @@ function Hero() {
           />
         </div>
         <p className="text-center mt-6">
-          Una cafetería amigable con productos de calidad para toda la familia.
+          Somos una cafetería con productos de calidad para toda la familia.
           <br />
           Todos los días en Mallplaza Iquique, Piso 2, Local 298.
         </p>

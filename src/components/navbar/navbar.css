@@ -1,0 +1,15 @@
+.desktop-navbar-content {
+    @apply px-3 py-1 w-full flex items-center justify-between;
+}
+
+.desktop-navbar-content ul {
+    @apply flex gap-7 h-16 items-center;
+}
+
+.desktop-navbar-content ul li {
+    @apply h-full flex items-center;
+}
+
+.desktop-navbar-content ul li a {
+    @apply flex items-center h-[90%] text-lg transition-all duration-75 ease-linear opacity-75 hover:opacity-100 hover:text-[var(--accent)];
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import "./navbar.css";
 
 export default function DesktopNav() {
   const [isScrollDown, setIsScrollDown] = useState(false);
@@ -32,10 +33,17 @@ export default function DesktopNav() {
 
 function DesktopNavbarContent () {
   return (
-    <nav className="p-3 flex items-center">
+    <nav className="desktop-navbar-content">
       <NavLink to="/">
         <img src="/navbarlogotransparent.png" alt="" className="h-10 opacity-35" />
       </NavLink>
+
+      <ul>
+        <li><NavLink to="/">Inicio</NavLink></li>
+        <li><NavLink to="/carta">Carta</NavLink></li>
+        <li><NavLink to="/location">Ubicación</NavLink></li>
+        <li><NavLink to="/socials">Instagram</NavLink></li>
+      </ul>
     </nav>
   );
 }
