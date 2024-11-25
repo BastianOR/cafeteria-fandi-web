@@ -48,7 +48,7 @@ function Hero() {
           <br />
           Todos los días en Mallplaza Iquique, Piso 2, Local 298.
         </p>
-        <NavLink to={"/menu"} className="btn-primary mb-11 mt-7">
+        <NavLink to={"/carta"} className="btn-primary mb-11 mt-7">
           Ver la Carta
         </NavLink>
       </main>

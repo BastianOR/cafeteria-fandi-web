@@ -51,6 +51,12 @@ h3 {
   @apply text-xl tracking-wider font-semibold;
 }
 
+h4 {
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 p {
   @apply text-lg md:text-base opacity-80;
 }
