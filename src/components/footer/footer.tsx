@@ -3,8 +3,8 @@ export default function Footer() {
   const developerWebsite = "https://www.linkedin.com/in/bastian-or/";
 
   return (
-    <footer className="w-full mt-7 p-3 bg-[var(--accent)] text-gray-50 flex justify-center">
-      <div className="flex flex-col items-center border-[4px] border-[#f0efeb7c] p-5 w-full">
+    <footer className="w-full mt-7 p-3 bg-[var(--accent)] text-gray-50 flex justify-center z-10">
+      <div className="flex flex-col items-center border-[4px] border-[#f0efeb7c] p-5 w-full z-10">
 
 
         <img src="/fandilogo.png" alt="" className="h-28" />

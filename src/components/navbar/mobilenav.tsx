@@ -8,9 +8,7 @@ export default function MobileNav() {
   return (
     <>
       <section
-        className="w-full fixed top-0 right-0 bg-[var(--secondary)] 
-        z-20 md:w-0 md:overflow-hidden md:h-0 md:opacity-0 
-        flex flex-col items-center"
+        className="mobile-navbar"
       >
         <div className="flex flex-row items-center justify-between w-full p-3 h-14">
           <NavLink to="/">
@@ -28,7 +26,7 @@ export default function MobileNav() {
         <nav
           className={
             "w-full bg-[#eeede6] overflow-hidden transition-all duration-200 ease-linear flex flex-col items-center justify-center " +
-            (isOpen ? "h-[288px]" : "h-0")
+            (isOpen ? "h-[288px] z-30 " : " h-0 ")
           }
         >
           <NavLink

@@ -13,3 +13,11 @@
 .desktop-navbar-content ul li a {
     @apply flex items-center h-[90%] text-lg transition-all duration-75 ease-linear opacity-75 hover:opacity-100 hover:text-[var(--accent)];
 }
+
+.mobile-navbar {
+    @apply w-full fixed top-0 right-0 bg-[var(--secondary)] z-20 md:w-0 md:overflow-hidden md:h-0 md:opacity-0 flex flex-col items-center;
+}
+
+.mobile-navbar * {
+    @apply z-20;
+}
