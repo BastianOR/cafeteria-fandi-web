@@ -17,6 +17,8 @@
   /*color-scheme: light dark;*/
   color: #000000e2;
   background-color: var(--primary);
+  background-image: url("/heartpattern.png");
+  background-size: 12%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
