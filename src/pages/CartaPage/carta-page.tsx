@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+import { MdOutlineHorizontalRule } from "react-icons/md";
 import { useState } from "react";
 import "./carta-page.css";
 
@@ -49,7 +49,12 @@ export default function CartaPage() {
 
       <img src="/cakencoffee.png" alt="" className="w-full h-32 object-cover object-top"/>
 
-      <h4 className="mt-6 mx-2 text-center text-5xl">Nuestra Carta</h4>
+      <div className="w-full flex justify-center items-center gap-3 mt-6">
+        <MdOutlineHorizontalRule size={24} />
+        <h4 className="text-center text-[2.7rem] xs:text-5xl">Nuestra Carta</h4>
+        <MdOutlineHorizontalRule size={24} />
+      </div>
+
       <p className="text-center mt-5">Seleccione una categoría para ver nuestros productos.</p>
 
       <div className="categories-container">
