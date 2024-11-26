@@ -32,24 +32,28 @@ export default function MobileNav() {
           <NavLink
             to="/"
             className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+            onClick={() => setIsOpen(false)}
           >
             Inicio
           </NavLink>
           <NavLink
             to="/carta"
             className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+            onClick={() => setIsOpen(false)}
           >
             Carta
           </NavLink>
           <NavLink
             to="/location"
             className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+            onClick={() => setIsOpen(false)}
           >
             Ubicación
           </NavLink>
           <NavLink
             to="/socials"
             className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+            onClick={() => setIsOpen(false)}
           >
             Instagram
           </NavLink>
@@ -58,3 +62,4 @@ export default function MobileNav() {
     </>
   );
 }
+
