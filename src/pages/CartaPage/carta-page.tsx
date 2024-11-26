@@ -4,6 +4,7 @@ import { useState } from "react";
 import { formatClpPrice } from "../../lib/bodev-utils";
 import { categories } from "../../lib/restaurant-menu";
 import { ICategories } from "../../lib/interfaces";
+import { Fade } from "react-awesome-reveal";
 import "./carta-page.css";
 
 /* Main page rendered by the route "/carta" */
@@ -13,7 +14,7 @@ export default function CartaPage() {
   const categoryNameDefaultClasses = " opacity-80 group-hover:opacity-100 ";
 
   return (
-    <section className="w-full p-3 flex flex-col items-center">
+    <Fade triggerOnce className="w-full p-3 flex flex-col items-center">
 
       {/* Header image of the page */}
       <img src="/cakencoffee.png" alt="" className="w-full h-32 object-cover object-top" />
@@ -94,7 +95,7 @@ export default function CartaPage() {
 
 
       </div>
-    </section>
+    </Fade>
   );
 }
 
@@ -104,12 +105,14 @@ export default function CartaPage() {
 the schedule of what's considered breakfast time and tea time. */
 function BreakfastInfo({ breakfastTime, teaTime,}: { breakfastTime: string | undefined; teaTime: string | undefined; }) {
   return (
-    <h6 className="text-center pb-7 mb-7 border-b border-zinc-300 border-solid">
-      <b className="block text-lg opacity-70">Horarios desayuno / once</b>
-      <span className="block text-sm mt-1">
-        {breakfastTime || "10:30 - 12:30" + " / " + teaTime || "18:30 - 20:00"}
-      </span>
-    </h6>
+    <Fade triggerOnce>
+      <h6 className="text-center pb-7 mb-7 border-b border-zinc-300 border-solid">
+        <b className="block text-lg opacity-70">Horarios desayuno / once</b>
+        <span className="block text-sm mt-1">
+          {breakfastTime || "10:30 - 12:30" + " / " + teaTime || "18:30 - 20:00"}
+        </span>
+      </h6>
+    </Fade>
   );
 }
 
@@ -146,12 +149,14 @@ function renderMenuItemsForSelectedCategory ({ categories, selectedCategory } : 
   return (
     <div className="flex flex-col gap-6">
       { categoryMenu ? categoryMenu.map((menuItem: any) => (
-        <MenuItem
-          key={menuItem.food + ""}
-          food={menuItem.food + ""}
-          description={menuItem.description + ""}
-          price={menuItem.price}
-        />
+        <Fade triggerOnce>
+          <MenuItem
+            key={menuItem.food + ""}
+            food={menuItem.food + ""}
+            description={menuItem.description + ""}
+            price={menuItem.price}
+          />
+        </Fade>
       )) : (
         <p className="text-center">No hay productos disponibles en esta categoría</p>
       )}

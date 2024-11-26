@@ -1,14 +1,15 @@
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import { Fade } from "react-awesome-reveal";
 
 export default function Homepage() {
   return (
-    <>
+    <Fade triggerOnce className="w-full">
       <Hero />
       <Schedule />
       <Socials />
-    </>
+    </Fade>
   );
 }
 

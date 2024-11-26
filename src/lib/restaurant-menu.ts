@@ -24,13 +24,13 @@ export const categories: ICategories[] = [
     image: "/sandwiches.png",
     menu: [
       {
-        food: "Desayuno Italiano",
+        food: "Desayuno Chilensis",
         description:
           "Pan a elección con jamón y palta. Precio extra si agrega café, té o jugo de 350ml.",
         price: [5240, 7300],
       },
       {
-        food: "Desayuno Mexicano",
+        food: "Desajunior",
         description: "Tacos con aguacate y queso fundido + pino de la casa.",
         price: [3600],
       },
