@@ -8,6 +8,7 @@ export default function Homepage() {
     <Fade triggerOnce className="w-full">
       <Hero />
       <Schedule />
+      <Playground />
       <Socials />
     </Fade>
   );
@@ -104,7 +105,7 @@ const ScheduleTable = () => {
 
 function Socials() {
   return (
-    <div className="w-full bg-black text-white p-7 flex flex-col items-center md:flex-row md:justify-between">
+    <div className="w-full bg-black text-white px-7 py-12 flex flex-col items-center md:flex-row md:justify-between">
       <div className="w-full flex flex-col md:flex-row md:gap-10">
         <div className="grid grid-cols-2 gap-4 mb-7 md:mb-0 w-full md:w-1/2">
           <img src="igphotos/cheers.png" alt="Salud con mocachinos" className="w-full h-40 object-cover" />
@@ -123,6 +124,29 @@ function Socials() {
           </p>
           <a href="https://www.instagram.com/cafeteriafandi/" target="_blank" className="flex items-center gap-1 mt-7"><PiInstagramLogoFill size={24} color="var(--accent)" /> <u>@cafeteriafandi</u></a>
         </main>
+      </div>
+    </div>
+  );
+}
+
+function Playground() {
+  return (
+    <div className="w-full bg-black text-white px-7 py-12 gap-5 flex flex-col items-center sm:flex-row sm:justify-between">
+      <main className="w-full sm:w-[60%] sm:h-[450px] sm:flex sm:flex-col sm:justify-start">
+        <h3 className="mb-3">Juegos Infantiles</h3>
+        <MdOutlineHorizontalRule size={24} />
+        <p className="mt-6">
+        ¡Contamos con una sección privada de juego para los pequeños!
+          <ul className="list-disc list-inside mt-3">
+            <li>Gratis por 20 minutos por consumo sobre $5.000</li>
+            <li>Se puede extender el tiempo por un precio adicional.</li>
+            <li>La altura máxima es de 130cm. No insista.</li>
+            <li>Los niños deben estar bajo supervisión de sus padres en todo momento.</li>
+          </ul>
+        </p>
+      </main>
+      <div className="w-full flex justify-center sm:w-[40%] md:[30%]">
+        <img src="/fotojuegos.png" alt="" className="h-[200px] w-full sm:h-[450px] object-cover object-center" />
       </div>
     </div>
   );

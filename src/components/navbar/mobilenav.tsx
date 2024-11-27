@@ -50,13 +50,14 @@ export default function MobileNav() {
           >
             Ubicación
           </NavLink>
-          <NavLink
-            to="/socials"
+          <a
+            href="https://www.instagram.com/cafeteriafandi/"
+            target="_blank"
             className="w-full text-center py-5 text-xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
             onClick={() => setIsOpen(false)}
           >
             Instagram
-          </NavLink>
+          </a>
         </nav>
       </section>
     </>

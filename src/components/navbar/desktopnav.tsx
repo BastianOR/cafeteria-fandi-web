@@ -42,7 +42,7 @@ function DesktopNavbarContent () {
         <li><NavLink to="/">Inicio</NavLink></li>
         <li><NavLink to="/carta">Carta</NavLink></li>
         <li><NavLink to="/location">Ubicación</NavLink></li>
-        <li><NavLink to="/socials">Instagram</NavLink></li>
+        <li><a href="https://www.instagram.com/cafeteriafandi/" target="_blank">Instagram</a></li>
       </ul>
     </nav>
   );
