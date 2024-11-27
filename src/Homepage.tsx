@@ -79,7 +79,7 @@ const ScheduleTable = () => {
   ];
 
   return (
-    <div className="container mx-auto p-4">
+    <main className="container mx-auto p-4">
       <table className="min-w-full bg-white border border-gray-200">
         <thead>
           <tr className="bg-[var(--secondary)] text-[#0000009e] uppercase text-sm leading-normal">
@@ -99,13 +99,13 @@ const ScheduleTable = () => {
           ))}
         </tbody>
       </table>
-    </div>
+    </main>
   );
 };
 
 function Socials() {
   return (
-    <div className="w-full bg-black text-white px-7 py-12 flex flex-col items-center md:flex-row md:justify-between">
+    <section className="w-full bg-black text-white px-7 py-12 flex flex-col items-center md:flex-row md:justify-between">
       <div className="w-full flex flex-col md:flex-row md:gap-10">
         <div className="grid grid-cols-2 gap-4 mb-7 md:mb-0 w-full md:w-1/2">
           <img src="igphotos/cheers.png" alt="Salud con mocachinos" className="w-full h-40 object-cover" />
@@ -125,13 +125,13 @@ function Socials() {
           <a href="https://www.instagram.com/cafeteriafandi/" target="_blank" className="flex items-center gap-1 mt-7"><PiInstagramLogoFill size={24} color="var(--accent)" /> <u>@cafeteriafandi</u></a>
         </main>
       </div>
-    </div>
+    </section>
   );
 }
 
 function Playground() {
   return (
-    <div className="w-full border-b border-[#ffffff6f] bg-black text-white px-7 py-12 gap-5 flex flex-col items-center sm:flex-row sm:justify-between">
+    <section className="w-full border-b border-[#ffffff6f] bg-black text-white px-7 py-12 gap-5 flex flex-col items-center sm:flex-row sm:justify-between">
       <main className="w-full sm:w-[60%] sm:h-[450px] sm:flex sm:flex-col sm:justify-start">
         <h3 className="mb-3">Juegos Infantiles</h3>
         <MdOutlineHorizontalRule size={24} />
@@ -148,6 +148,6 @@ function Playground() {
       <div className="w-full flex justify-center sm:w-[40%] md:[30%]">
         <img src="/fotojuegos.png" alt="" className="h-[200px] w-full sm:h-[450px] object-cover object-center" />
       </div>
-    </div>
+    </section>
   );
 }
