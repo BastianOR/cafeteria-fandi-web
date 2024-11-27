@@ -1,6 +1,6 @@
 export default function Footer() {
   const year = new Date().getFullYear();
-  const developerWebsite = "https://www.linkedin.com/in/bastian-or/";
+  const developerWebsite = "https://github.com/BastianOR";
 
   return (
     <footer className="w-full mt-7 p-3 bg-[var(--accent)] text-gray-50 flex justify-center z-10">
@@ -30,7 +30,7 @@ export default function Footer() {
 
         <small className="opacity-70 mt-4 text-center">
           Web desarrollada por{" "}
-          <a target="_blank" href={developerWebsite}>
+          <a target="_blank" className="underline" href={developerWebsite}>
             Bastian Ossandón Rivera
           </a>
         </small>

@@ -131,17 +131,17 @@ function Socials() {
 
 function Playground() {
   return (
-    <div className="w-full bg-black text-white px-7 py-12 gap-5 flex flex-col items-center sm:flex-row sm:justify-between">
+    <div className="w-full border-b border-[#ffffff6f] bg-black text-white px-7 py-12 gap-5 flex flex-col items-center sm:flex-row sm:justify-between">
       <main className="w-full sm:w-[60%] sm:h-[450px] sm:flex sm:flex-col sm:justify-start">
         <h3 className="mb-3">Juegos Infantiles</h3>
         <MdOutlineHorizontalRule size={24} />
         <p className="mt-6">
         ¡Contamos con una sección privada de juego para los pequeños!
           <ul className="list-disc list-inside mt-3">
-            <li>Gratis por 20 minutos por consumo sobre $5.000</li>
-            <li>Se puede extender el tiempo por un precio adicional.</li>
-            <li>La altura máxima es de 130cm. No insista.</li>
-            <li>Los niños deben estar bajo supervisión de sus padres en todo momento.</li>
+            <li className="mt-2">Gratis por 20 minutos por consumo sobre $5.000</li>
+            <li className="mt-2">Se puede extender el tiempo por un precio adicional.</li>
+            <li className="mt-2">La altura máxima es de 130cm. No insista.</li>
+            <li className="mt-2">Los niños deben estar bajo supervisión de sus padres en todo momento.</li>
           </ul>
         </p>
       </main>
