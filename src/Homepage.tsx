@@ -107,10 +107,10 @@ function Socials() {
     <div className="w-full bg-black text-white p-7 flex flex-col items-center md:flex-row md:justify-between">
       <div className="w-full flex flex-col md:flex-row md:gap-10">
         <div className="grid grid-cols-2 gap-4 mb-7 md:mb-0 w-full md:w-1/2">
-          <img src="image1.jpg" alt="Image 1" className="w-full h-40 bg-[#fbafaf]" />
-          <img src="image2.jpg" alt="Image 2" className="w-full h-40 bg-[#fbafaf]" />
-          <img src="image3.jpg" alt="Image 3" className="w-full h-40 bg-[#fbafaf]" />
-          <img src="image4.jpg" alt="Image 4" className="w-full h-40 bg-[#fbafaf]" />
+          <img src="igphotos/cheers.png" alt="Salud con mocachinos" className="w-full h-40 object-cover" />
+          <img src="igphotos/childgames.png" alt="Jugando en el patio de juegos privado" className="w-full h-40 object-cover" />
+          <img src="igphotos/happycustomer.png" alt="Cliente satisfecho con un regalo" className="w-full h-40 object-cover" />
+          <img src="igphotos/thesquad.png" alt="El staff de la cafetería fandi" className="w-full h-40 object-cover" />
         </div>
 
         <main className="flex flex-col items-center text-center md:items-start md:text-start md:ml-2 w-full md:w-1/2 mb-1">
