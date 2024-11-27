@@ -6,6 +6,6 @@ export interface ICategories {
     menu: {
         food: string;
         description: string;
-        price: number[];
+        price: number[] | string;
     }[];
 }

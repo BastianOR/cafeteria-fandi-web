@@ -26,33 +26,33 @@ export default function MobileNav() {
         <nav
           className={
             "w-full bg-[#eeede6] overflow-hidden transition-all duration-200 ease-linear flex flex-col items-center justify-center " +
-            (isOpen ? "h-[288px] z-30 " : " h-0 ")
+            (isOpen ? "h-[272px] z-30 " : " h-0 ")
           }
         >
           <NavLink
             to="/"
-            className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+            className="w-full text-center py-5 text-xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
             onClick={() => setIsOpen(false)}
           >
             Inicio
           </NavLink>
           <NavLink
             to="/carta"
-            className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+            className="w-full text-center py-5 text-xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
             onClick={() => setIsOpen(false)}
           >
             Carta
           </NavLink>
           <NavLink
             to="/location"
-            className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+            className="w-full text-center py-5 text-xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
             onClick={() => setIsOpen(false)}
           >
             Ubicación
           </NavLink>
           <NavLink
             to="/socials"
-            className="w-full text-center p-5 text-2xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
+            className="w-full text-center py-5 text-xl hover:bg-[#dddbd1] transition-colors duration-75 ease-linear"
             onClick={() => setIsOpen(false)}
           >
             Instagram

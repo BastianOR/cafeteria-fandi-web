@@ -65,7 +65,7 @@ export default function CartaPage() {
       </div>
 
       {/* The main content of the page, where menu items are displayed */}
-      <div className="border-2 border-zinc-300 border-solid px-4 py-7 w-full my-10">
+      <div className="border-2 border-zinc-300 border-solid w-full my-10">
 
         {/* This section renders BreakfastInfo when the selected category is "Desayuno".
         It finds out what the index of the category of name "Desayuno" is, before retrieving it's data as 
@@ -106,7 +106,7 @@ the schedule of what's considered breakfast time and tea time. */
 function BreakfastInfo({ breakfastTime, teaTime,}: { breakfastTime: string | undefined; teaTime: string | undefined; }) {
   return (
     <Fade triggerOnce>
-      <h6 className="text-center pb-7 mb-7 border-b border-zinc-300 border-solid">
+      <h6 className="text-center pb-7 my-7 border-b border-zinc-300 border-solid">
         <b className="block text-lg opacity-70">Horarios desayuno / once</b>
         <span className="block text-sm mt-1">
           {breakfastTime || "10:30 - 12:30" + " / " + teaTime || "18:30 - 20:00"}
@@ -117,11 +117,10 @@ function BreakfastInfo({ breakfastTime, teaTime,}: { breakfastTime: string | und
 }
 
 
-
 /* Component that renders for each singular item in the menu of a category */
-function MenuItem({ food, description, price } : {  food: string; description: string; price: Array<number>; }) {
+function MenuItem({ food, description, price, isGray } : {  food: string; description: string; price: Array<number>; isGray: boolean; }) {
   return (
-    <div className="singular-item">
+    <div className={`transition-colors duration-75 ease-linear flex flex-col px-4 py-4 sm:flex-row items-center sm:justify-between ${isGray ? 'bg-[#c3c3b521] hover:bg-[#88887921]' : ' hover:bg-[#88887921] '}`}>
       <div className="w-full sm:w-[80%]">
         <ul className="list-disc list-inside font-bold">
           <li>{food + ""}</li>
@@ -130,14 +129,12 @@ function MenuItem({ food, description, price } : {  food: string; description: s
           {description + ""}
         </span>
       </div>
-      <div className="w-full sm:w-[20%] text-left sm:text-right">
+      <div className="w-full mt-2 sm:mt-0 sm:w-[20%] text-left sm:text-right">
         { price.length === 1 ? <span>{formatClpPrice(price[0])}</span> : <span>{ formatClpPrice(price[0]) + " / " + formatClpPrice(price[1])}</span>}
       </div>
     </div>
   );
 }
-
-
 
 /* Component that loops through a category's menu data and renders MenuItem components in iterations.
 Also in charge of informing the user If there's no menu items on the selected category. */
@@ -147,14 +144,14 @@ function renderMenuItemsForSelectedCategory ({ categories, selectedCategory } : 
   const categoryMenu = categoryData?.menu;
   /* Map the categoryMenu array to render MenuItem components with prop values given by the menu item: */
   return (
-    <div className="flex flex-col gap-6">
-      { categoryMenu ? categoryMenu.map((menuItem: any) => (
-        <Fade triggerOnce>
+    <div className="flex flex-col gap-0">
+      { categoryMenu ? categoryMenu.map((menuItem: any, index: number) => (
+        <Fade triggerOnce key={menuItem.food + ""}>
           <MenuItem
-            key={menuItem.food + ""}
             food={menuItem.food + ""}
             description={menuItem.description + ""}
             price={menuItem.price}
+            isGray={index % 2 !== 0}
           />
         </Fade>
       )) : (
@@ -162,5 +159,5 @@ function renderMenuItemsForSelectedCategory ({ categories, selectedCategory } : 
       )}
     </div>
   );
-
 }
+

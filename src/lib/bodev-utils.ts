@@ -21,7 +21,11 @@ export const formatChileanDate = (date: string) => {
   return `${day} de ${monthNames[month - 1]}, ${year}`;
 };
 
-export const formatClpPrice = (ogPrice: number) => {
+export const formatClpPrice = (ogPrice: number | string) => {
+  if (typeof ogPrice === "string") {
+    return "";
+  }
+
   const formatter = new Intl.NumberFormat("es-CL", {
     style: "currency",
     currency: "CLP",
